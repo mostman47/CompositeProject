@@ -33,5 +33,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/Student_Info"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/org/tempuri"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-Student_Info"/>
+    <target name="wsimport-client-Teacher_Info" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Teacher_Info"/>
+        <property name="wsdl-Teacher_Info" location="xml-resources/web-service-references/Teacher_Info/wsdl/cs08.cs.sjsu.edu_9400/soap11/Teacher_Info.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Teacher_Info" destdir="${build.generated.dir}/jax-wsCache/Teacher_Info" wsdl="${wsdl-Teacher_Info}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" wsdlLocation="http://cs08.cs.sjsu.edu:9400/soap11/Teacher_Info?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Teacher_Info}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Teacher_Info"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Teacher_Info">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Teacher_Info" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Teacher_Info"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/tempuri"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Student_Info, wsimport-client-Teacher_Info"/>
 </project>
