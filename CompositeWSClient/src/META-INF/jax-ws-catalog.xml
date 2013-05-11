@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Student_Info?wsdl" uri="wsdl/cs08.cs.sjsu.edu_9400/soap11/Student_Info.wsdl"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Student_Info?xsd=1" uri="wsdl/cs08.cs.sjsu.edu_9400/soap11/Student_Info.xsd_1.xsd"/>
+</catalog>

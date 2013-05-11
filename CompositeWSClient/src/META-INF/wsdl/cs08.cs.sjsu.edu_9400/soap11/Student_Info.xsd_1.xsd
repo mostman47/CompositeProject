@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+  <xs:complexType name="Student_InfoType">
+    <xs:sequence>
+      <xs:element name="Student_InfoInput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Student_Info" type="tns:Student_InfoType" />
+  <xs:complexType name="Student_InfoResponseType">
+    <xs:sequence>
+      <xs:element name="Student_InfoOutput" type="tns:Student_InfoOutputCursorType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Student_InfoOutputCursorType">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="row" type="tns:Student_InfoOutputRowType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Student_InfoOutputRowType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:integer" />
+      <xs:element name="LastName" type="xs:string" />
+      <xs:element name="FirstName" type="xs:string" />
+      <xs:element name="Sex" type="xs:string" />
+      <xs:element name="Age" type="xs:double" />
+      <xs:element name="email" type="xs:string" />
+      <xs:element name="City" type="xs:string" />
+      <xs:element name="Country" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Student_InfoResponse" type="tns:Student_InfoResponseType" />
+</xs:schema>
