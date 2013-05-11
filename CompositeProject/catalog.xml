@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Teacher_Info?wsdl" uri="xml-resources/web-service-references/Teacher_Info/wsdl/cs08.cs.sjsu.edu_9400/soap11/Teacher_Info.wsdl"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Teacher_Info?xsd=1" uri="xml-resources/web-service-references/Teacher_Info/wsdl/cs08.cs.sjsu.edu_9400/soap11/Teacher_Info.xsd_1.xsd"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Student_Info?wsdl" uri="xml-resources/web-service-references/Student_Info/wsdl/cs08.cs.sjsu.edu_9400/soap11/Student_Info.wsdl"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap11/Student_Info?xsd=1" uri="xml-resources/web-service-references/Student_Info/wsdl/cs08.cs.sjsu.edu_9400/soap11/Student_Info.xsd_1.xsd"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap12/Student_Info?wsdl" uri="xml-resources/web-service-references/Student_Info/wsdl/cs08.cs.sjsu.edu_9400/soap12/Student_Info.wsdl"/>
+    <system systemId="http://cs08.cs.sjsu.edu:9400/soap12/Student_Info?xsd=1" uri="xml-resources/web-service-references/Student_Info/wsdl/cs08.cs.sjsu.edu_9400/soap12/Student_Info.xsd_1.xsd"/>
+    <system systemId="http://www.w3schools.com/webservices/tempconvert.asmx" uri="xml-resources/web-service-references/tempconvert/wsdl/www.w3schools.com/webservices/tempconvert.asmx"/>
+    <system systemId="http://www.w3schools.com/webservices/tempconvert.asmx?wsdl" uri="xml-resources/web-service-references/tempconvert/wsdl/www.w3schools.com/webservices/tempconvert.asmx.wsdl"/>
+</catalog>
